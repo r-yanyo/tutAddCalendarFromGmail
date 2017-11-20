@@ -1,7 +1,6 @@
 # tutAddCalendarFromGmail
 
 TUTの補講・休講・教室変更情報をGmailからGoogleCalendarに追加するGoogleAppsScriptです。  
-未完成なのでまだ実用的では無いです。(誰か手伝って・・・）  
 
 教務から送られてくるメールはだいたい以下のフォーマットになっています。  
 >■開講学部：工学部  
