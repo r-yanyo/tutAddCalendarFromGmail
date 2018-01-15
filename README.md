@@ -1,7 +1,17 @@
 # tutAddCalendarFromGmail
+TUTの補講・休講・教室変更情報をGmailからGoogleCalendarに追加するGoogleAppsScriptです。
 
-TUTの補講・休講・教室変更情報をGmailからGoogleCalendarに追加するGoogleAppsScriptです。  
+## 使い方
+1. 教務から来るメールをGmailへ転送し、ラベルを"豊橋技科大"とする。
+2. "tutAddCalendarFromGmail.gs"をGoogleDriveに保存する。  
+3. 保存した"tutAddCalendarFromGmail.gs"を開いて、プロジェクトのトリガー（プログラムを実行する時間）を決める。詳しくは図を参照
+<figure>
+<legend>GoogleAppsScript編集画面</legend>
+<img src="./GASscreen.png" width="500px">
+</figure>
+4. プログラムが実行されると、Googleカレンダーに新しく"TUT授業"というカレンダーが作成され、そこに補講・休講・教室変更情報が追加されます。  
 
+## 原理
 教務から送られてくるメールはだいたい以下のフォーマットになっています。  
 >■開講学部：工学部  
 ■時間割番号：B136*****  
@@ -15,13 +25,6 @@ TUTの補講・休講・教室変更情報をGmailからGoogleCalendarに追加�
 
 このメールをパースして、カレンダーのイベントに追加します。（カレンダーが無い場合は新しく作成します。）  
 カレンダーに追加したイベントはメールで通知されます。
-
-### 実行方法
-- "tutAddCalendarFromGmail.gs"をダウンロードするかコピーして新しくGoogleAppsScriptを作成して下さい。  
-- 教務から来るメールのラベルを"豊橋技科大"として下さい。（ラベル名は"createEvent"関数の引数で変更出来ます。)  
-- スクリプトを実行するとGoogleアカウントの認証を求められるので、教務からメールを受け取っているアカウントで認証して下さい。  
-- 実行が終わると、Googleカレンダーに新しく"TUT授業"というカレンダーが作成され、そこに補講・休講・教室変更情報が追加されます。  
-- また、追加されたイベントはGmailにも通知されます。
 
 ### 改善したい点
 - 補講・休講・教室変更の取り消しメールに対応していない。
