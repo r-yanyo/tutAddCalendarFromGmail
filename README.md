@@ -3,8 +3,8 @@ TUTの補講・休講・教室変更情報をGmailからGoogleCalendarに追加�
 
 ## 使い方
 1. 教務から来るメールをGmailへ転送し、ラベルを"豊橋技科大"とする。
-2. "tutAddCalendarFromGmail.gs"をGoogleDriveに保存する。  
-3. 保存した"tutAddCalendarFromGmail.gs"を開いて、プロジェクトのトリガー（プログラムを実行する時間）を決める。詳しくは図を参照
+2. "tutAddCalendarFromGmail.gs"をGoogleDriveに保存する。  
+3. 保存した"tutAddCalendarFromGmail.gs"を開いて、プロジェクトのトリガー（プログラムを実行する時間）を決める。詳しくは図を参照
 <figure>
 <legend>GoogleAppsScript編集画面</legend>
 <img src="./GASscreen.png" width="500px">
